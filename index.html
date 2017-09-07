@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- All Favicon Links -->
-  <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./resources/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="./resources/images/favicon.png" type="image/x-icon">
 
   <!-- All Font Links -->
   <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
@@ -19,17 +19,24 @@
   <!-- All Stylesheets -->
   <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-  <!-- <link rel="stylesheet" type="text/css" href="./slick/slick.css"/> -->
-  <!-- <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/> -->
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> -->
+  <link rel="stylesheet" type="text/css" href="./resources/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./resources/slick/slick-theme.css"/>
   <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+
+  <!-- All JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+  <script type="text/javascript" src="./resources/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./resources/js/main.js"></script>
+
 </head>
 <body>
 
   <!-- Header -->
   <header>
     <!--     <div class="col-xs-12 col-sm-12 col-lg-12"> -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top style="top:0px;"">
       <div class="container-fluid">
         <div class="navbar-header">
           <ul class="nav navbar-nav">
@@ -43,146 +50,146 @@
     </nav>
 
     <!-- Jumbotron Section -->
-    <div class="carousel slick">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="jumbotron-bike">
-            <h1>Get Going.</h1>
-            <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
-          </div>
-          <div class="jumbotron-beer">
-            <h1>Get Thinking.</h1>
-            <p>Meet like-minded individuals who will help fuel your creative juices.</p>
-          </div>
-          <div class="jumbotron-flowers">
-            <h1>Get Creating.</h1>
-            <p>Stop over thinking projects and begin putting them out in the world.</p>
-          </div>
-          <div class="jumbotron-duffel">
-            <h1>Get Started.</h1>
-            <p>What are you waiting for? Today's the day for your next big idea.</p>
-          </div>
+    <div class="carousel slick-initialized slick-slider">
+      <div class="jumbotron background-bike">
+        <div class="container-fluid">
+          <h1>Get Going.</h1>
+          <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
         </div>
-        <div class="btn btn-primary btn-lg" role="button"><a href="#">Jump In</a></div>
-      </div> <!-- Closes Banner -->
-    </div> <!-- Closes Jumbotron -->
-  </div>
-</div>
-</header>
+      </div>
+      <div class="jumbotron background-beer">
+        <div class="container-fluid">
+          <h1>Get Thinking.</h1>
+          <p>Meet like-minded individuals who will help fuel your creative juices.</p>
+        </div>
+      </div>
+      <div class="jumbotron background-flower">
+        <div class="container-fluid">
+          <h1>Get Creating.</h1>
+          <p>Stop over thinking projects and begin putting them out in the world.</p>
+        </div>
+      </div>
+      <div class="jumbotron background-duffel">
+        <div class="container-fluid">
+          <h1>Get Started.</h1>
+          <p>What are you waiting for? Today's the day for your next big idea.</p>
+        </div>
+      </div>
+    </div> <!-- Closes Carousel Slick -->
+    <div class="btn btn-primary btn-lg" role="button"><a href="#">Jump In</a></div>
+  </header>
 
-<!-- Main Site Container -->
+  <!-- Main Site Container -->
 
-<!-- Featured Section -->
-<div class="container-fluid">
-  <h2>Featured Projects</h2>
-  <div class="row">
-    <div class="col-sm-12 col-lg-6">
-      <div class="image-container">
-        <img src="./resources/images/featured-project.png" alt="Barn Image">
-      </div> <!-- Closes Image Container -->
-    </div>
-    <div class="col-xs-6 col-md-3">
-      <div class="documentary">
-        <h3>DeFrost: A Documentary</h3>
-        <h4>by Leo De Firenze</h4>
-        <p>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley. This is a story about my mother's childhood. This film attempts to capture vignettes of her upbringing â€” her family, friends, pets, and eventual depature from a freezing valley in Northern Italy â€” through beautiful cinematography and narration.</p>
-      </div> <!-- Closes Documentary -->
-    </div>
-    <!-- <div class="clearfix visible-xs-block"></div> -->
-    <div class="col-xs-6 col-md-3">
-      <div class="categories">
-        <h3>Product Categories</h3>
-        <ul>
-          <li>Art</li>
-          <li>Books</li>
-          <li>Crystals</li>
-          <li>Design</li>
-          <li>Doodles</li>
-          <li>Deedlybobs</li>
-          <li>Farming</li>
-          <li>Gadgets</li>
-          <li>Hoverboards</li>
-          <li>Jams, Jellies, Etc.</li>
-          <li>Magazines</li>
-          <li>Plants</li>
-          <li>Snakes & Snake Equipment</li>
-          <li>Tables</li>
-          <li>Ventriliquist Figures</li>
-          <li>Yoyos</li>
-        </ul>
-      </div> <!-- Closes Categories -->
-    </div> <!-- Closes 2rd Set of Rows -->
-  </div> <!-- Closes Row-->
-</div> <!-- Closes Featured container-fluid-->
-
-
-<!-- Projects Section -->
-
-<div class="container-fluid">
-  <h2>Projects</h2>
-  <div class="row">
-    <div class="col-xs-12 col-md-4">
-      <div class="proj1">
+  <!-- Featured Section -->
+  <div class="container-fluid">
+    <h2>Featured Projects</h2>
+    <div class="row">
+      <div class="col-sm-12 col-lg-6">
         <div class="image-container">
-          <img src="./resources/images/project1.png" alt="Lady sitting in tights">
+          <img src="./resources/images/featured-project.png" alt="Barn Image">
         </div> <!-- Closes Image Container -->
-        <div class="proj1-description">
-          <h3>The Right Tights</h3>
-          <h4>by Riley Mae</h4>
-          <p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
-        </div> <!-- Closes Proj1 Description -->
-      </div> <!-- Closes Proj1 -->
-    </div> <!-- Closes 1st Set of Rows -->
-    <div class="col-xs-12 col-md-4">
-      <div class="proj2">
-        <div class="image-container">
-          <img src="./resources/images/project2.png" alt="Grand Family Room">
-        </div> <!-- Closes Image Container -->
-        <div class="proj2-description">
-          <h3>Peppermint Smart Home</h3>
-          <h4>by Brian McDonald</h4>
-          <p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
-        </div> <!-- Closes Proj2 Description -->
-      </div> <!-- Closes Proj2 -->
-    </div> <!-- Closes 2nd Set of Rows -->
-    <div class="col-xs-12 col-md-4">
-      <div class="proj3">
-        <div class="image-container">
-          <img src="./resources/images/project3.png" alt="Reversed Store Front">
-        </div> <!-- Closes Image Container -->
-        <div class="proj3-description">
-          <h3>American Streetlife</h3>
-          <h4>by Patrick Wallace</h4>
-          <p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
-        </div> <!-- Closes Proj3 Description -->
-      </div> <!-- Closes Proj3 -->
-    </div> <!-- Closes 3rd Set of Rows -->
-  </div> <!-- Closes Project -->
-</div> <!-- Closes Row -->
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="documentary">
+          <h3>DeFrost: A Documentary</h3>
+          <h4>by Leo De Firenze</h4>
+          <p>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley. This is a story about my mother's childhood. This film attempts to capture vignettes of her upbringing â€” her family, friends, pets, and eventual depature from a freezing valley in Northern Italy â€” through beautiful cinematography and narration.</p>
+        </div> <!-- Closes Documentary -->
+      </div>
+      <!-- <div class="clearfix visible-xs-block"></div> -->
+      <div class="col-xs-6 col-md-3">
+        <div class="categories">
+          <h3>Product Categories</h3>
+          <ul>
+            <li>Art</li>
+            <li>Books</li>
+            <li>Crystals</li>
+            <li>Design</li>
+            <li>Doodles</li>
+            <li>Deedlybobs</li>
+            <li>Farming</li>
+            <li>Gadgets</li>
+            <li>Hoverboards</li>
+            <li>Jams, Jellies, Etc.</li>
+            <li>Magazines</li>
+            <li>Plants</li>
+            <li>Snakes & Snake Equipment</li>
+            <li>Tables</li>
+            <li>Ventriliquist Figures</li>
+            <li>Yoyos</li>
+          </ul>
+        </div> <!-- Closes Categories -->
+      </div> <!-- Closes 2rd Set of Rows -->
+    </div> <!-- Closes Row-->
+  </div> <!-- Closes Featured container-fluid-->
 
-<!-- Having Troubles Section -->
-<div class="trouble">
-  <h1>Having trouble thinking of an idea?</h1>
-  <p>Inventors™ block strikes at the worst times. But that's all changed with Jumpstart's Good Idea Generator Lite (GIGLi).</p>
-  <div class="btn btn-primary btn-lg" role="button"><a href="#">Learn More</a></div>
-</div> <!-- Closes Trouble -->
+
+  <!-- Projects Section -->
+
+  <div class="container-fluid">
+    <h2>Projects</h2>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="proj1">
+          <div class="image-container">
+            <img src="./resources/images/project1.png" alt="Lady sitting in tights">
+          </div> <!-- Closes Image Container -->
+          <div class="proj1-description">
+            <h3>The Right Tights</h3>
+            <h4>by Riley Mae</h4>
+            <p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
+          </div> <!-- Closes Proj1 Description -->
+        </div> <!-- Closes Proj1 -->
+      </div> <!-- Closes 1st Set of Rows -->
+      <div class="col-xs-12 col-md-4">
+        <div class="proj2">
+          <div class="image-container">
+            <img src="./resources/images/project2.png" alt="Grand Family Room">
+          </div> <!-- Closes Image Container -->
+          <div class="proj2-description">
+            <h3>Peppermint Smart Home</h3>
+            <h4>by Brian McDonald</h4>
+            <p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
+          </div> <!-- Closes Proj2 Description -->
+        </div> <!-- Closes Proj2 -->
+      </div> <!-- Closes 2nd Set of Rows -->
+      <div class="col-xs-12 col-md-4">
+        <div class="proj3">
+          <div class="image-container">
+            <img src="./resources/images/project3.png" alt="Reversed Store Front">
+          </div> <!-- Closes Image Container -->
+          <div class="proj3-description">
+            <h3>American Streetlife</h3>
+            <h4>by Patrick Wallace</h4>
+            <p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
+          </div> <!-- Closes Proj3 Description -->
+        </div> <!-- Closes Proj3 -->
+      </div> <!-- Closes 3rd Set of Rows -->
+    </div> <!-- Closes Project -->
+  </div> <!-- Closes Row -->
+
+  <!-- Having Troubles Section -->
+  <div class="trouble">
+    <h1>Having trouble thinking of an idea?</h1>
+    <p>Inventors™ block strikes at the worst times. But that's all changed with Jumpstart's Good Idea Generator Lite (GIGLi).</p>
+    <div class="btn btn-primary btn-lg" role="button"><a href="#">Learn More</a></div>
+  </div> <!-- Closes Trouble -->
 </div> <!-- Closes Site Container -->
 
-<!-- All JS Scripts -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-<script type="text/javascript" src="./resources/js/main.js"></script>
+
 
 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 <!-- <script type="text/javascript" src="./slick/slick.min.js"></script> -->
 
 <!-- <script type="text/javascript">
-   $(document).ready(function(){
-     $('.your-class').slick({
-       setting-name: setting-value
-     });
-   });
- </script> -->
+$(document).ready(function(){
+$('.your-class').slick({
+setting-name: setting-value
+});
+});
+</script> -->
 
 </body>
 </html>
