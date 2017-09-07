@@ -25,61 +25,59 @@
   <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
 
   <!-- All JS Scripts -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
   <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="./resources/slick/slick.min.js"></script>
   <script type="text/javascript" src="./resources/js/main.js"></script>
-
+  <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <!--     <div class="col-xs-12 col-sm-12 col-lg-12"> -->
-    <nav class="navbar navbar-default navbar-fixed-top style="top:0px;"">
+  <!-- Navigation -->
+  <!--     <div class="col-xs-12 col-sm-12 col-lg-12"> -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Explore</a></li>
+          <li><a href="#about">Start a project</a></li>
+          <li><a href="#contact">About us</a></li>
+        </ul>
+        <img class="navbar-brand navbar-right collapse navbar-collapse" src="./resources/images/logo.png" alt="Jumpstart Logo/Icon"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron Section -->
+  <div class="carousel slick-initialized slick-slider">
+    <div class="jumbotron jumbotron-bike slick-slide">
       <div class="container-fluid">
-        <div class="navbar-header">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Explore</a></li>
-            <li><a href="#about">Start a project</a></li>
-            <li><a href="#contact">About us</a></li>
-          </ul>
-          <img class="navbar-brand navbar-right collapse navbar-collapse" src="./resources/images/logo.png" alt="Jumpstart Logo/Icon"></a>
-        </div>
+        <h1>Get Going.</h1>
+        <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
       </div>
-    </nav>
-
-    <!-- Jumbotron Section -->
-    <div class="carousel slick-initialized slick-slider">
-      <div class="jumbotron background-bike">
-        <div class="container-fluid">
-          <h1>Get Going.</h1>
-          <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
-        </div>
+    </div>
+    <div class="jumbotron jumbotron-beer  slick-slide">
+      <div class="container-fluid">
+        <h1>Get Thinking.</h1>
+        <p>Meet like-minded individuals who will help fuel your creative juices.</p>
       </div>
-      <div class="jumbotron background-beer">
-        <div class="container-fluid">
-          <h1>Get Thinking.</h1>
-          <p>Meet like-minded individuals who will help fuel your creative juices.</p>
-        </div>
+    </div>
+    <div class="jumbotron jumbotron-flower  slick-slide">
+      <div class="container-fluid">
+        <h1>Get Creating.</h1>
+        <p>Stop over thinking projects and begin putting them out in the world.</p>
       </div>
-      <div class="jumbotron background-flower">
-        <div class="container-fluid">
-          <h1>Get Creating.</h1>
-          <p>Stop over thinking projects and begin putting them out in the world.</p>
-        </div>
+    </div>
+    <div class="jumbotron jumbotron-duffel  slick-slide">
+      <div class="container-fluid">
+        <h1>Get Started.</h1>
+        <p>What are you waiting for? Today's the day for your next big idea.</p>
       </div>
-      <div class="jumbotron background-duffel">
-        <div class="container-fluid">
-          <h1>Get Started.</h1>
-          <p>What are you waiting for? Today's the day for your next big idea.</p>
-        </div>
-      </div>
-    </div> <!-- Closes Carousel Slick -->
+    </div>
     <div class="btn btn-primary btn-lg" role="button"><a href="#">Jump In</a></div>
-  </header>
-
-  <!-- Main Site Container -->
+  </div> <!-- Closes Carousel Slick -->
 
   <!-- Featured Section -->
   <div class="container-fluid">
@@ -97,7 +95,6 @@
           <p>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley. This is a story about my mother's childhood. This film attempts to capture vignettes of her upbringing â€” her family, friends, pets, and eventual depature from a freezing valley in Northern Italy â€” through beautiful cinematography and narration.</p>
         </div> <!-- Closes Documentary -->
       </div>
-      <!-- <div class="clearfix visible-xs-block"></div> -->
       <div class="col-xs-6 col-md-3">
         <div class="categories">
           <h3>Product Categories</h3>
@@ -170,26 +167,12 @@
   </div> <!-- Closes Row -->
 
   <!-- Having Troubles Section -->
-  <div class="trouble">
-    <h1>Having trouble thinking of an idea?</h1>
+  <div class="container-fluid trouble">
+    <h1><strong>Having trouble thinking of an idea?</strong></h1>
     <p>Inventors™ block strikes at the worst times. But that's all changed with Jumpstart's Good Idea Generator Lite (GIGLi).</p>
     <div class="btn btn-primary btn-lg" role="button"><a href="#">Learn More</a></div>
   </div> <!-- Closes Trouble -->
 </div> <!-- Closes Site Container -->
-
-
-
-<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
-<!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-<!-- <script type="text/javascript" src="./slick/slick.min.js"></script> -->
-
-<!-- <script type="text/javascript">
-$(document).ready(function(){
-$('.your-class').slick({
-setting-name: setting-value
-});
-});
-</script> -->
 
 </body>
 </html>

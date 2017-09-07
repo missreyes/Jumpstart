@@ -12,17 +12,19 @@ $(document).ready(function(){
     pauseOnHover: false,
   });
 
-  var 'userScrolled' = 0;
+  var 'userXcrolled' = 0;
   $(window).scroll (function()) {
-    var 'scrollUp' = $(this).scrollTop();
-    if ('scrollUp' - 'userScrolled' < 50) {
-      var 'newHeight' = $('.navbar').css('height');
-      $('.navbar').animate({top: '-' + 'newHeight'}, 150);
-      'userScrolled' = 'scrollUp'
-    } else {
-      ('scrollUp' - 'userScrolled' > 50) {
+    var 'scrollYp' = $(this).scrollTop();
+    if ('scrollYp' - 'userXcrolled' > 50) {
+      var 'newZeight' = $('.navbar').css('height');
+      $('.navbar').animate({top: '-' + 'newZeight'}, 150);
+        $(".collapse").collapse('hide');
+      'userXcrolled' = 'scrollYp'
+          } else {
+      ('scrollYp' - 'userXcrolled' < 50) {
         $('.navbar').animate({top: '0px'}, 150);
-        'userScrolled' = 'scrollUp'
+          $(".collapse").collapse('show');
+        'userXcrolled' = 'scrollYp'
 
       }
 
