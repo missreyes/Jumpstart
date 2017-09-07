@@ -45,19 +45,19 @@ html {
 }
 
 .jumbotron-bike {
-  background-image: url("./resources/images/jumbotron-bike.jpg");
+  background-image: url("../images/jumbotron-bike.jpg");
 }
 
 .jumbotron-beer {
-  background-image: url("./resources/images/jumbotron-beer.jpg");
+  background-image: url("../images/jumbotron-beer.jpg");
 }
 
 .jumbotron-flowers {
-  background-image: url("./resources/images/jumbotron-flowers.jpg");
+  background-image: url("../images/jumbotron-flowers.jpg");
 }
 
 .jumbotron-duffel {
-  background-image: url("./resources/images/jumbotron-duffel.jpg");
+  background-image: url("..//images/jumbotron-duffel.jpg");
 }
 
 .jumbotron h1 {
