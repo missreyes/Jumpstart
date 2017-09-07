@@ -12,18 +12,18 @@ html {
 }
 
 /*Navigation*/
-.navbar-header {
+.navbar {
   width: 100%;
   justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
-.navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:active {
+  background-color: inherit;
   color: #399bd1;
 }
-
-/*.navbar-default .navbar-nav > .active > a:hover {
-  color: #000;
-}*/
 
 .navbarbrand {
   display: flex;
@@ -32,74 +32,49 @@ html {
 }
 
 /*Jumbotron*/
-.carousel {
-  /*display: block;
+.jumbotron {
   width: 100%;
-  height: auto;*/
+  height: 44rem;
+  padding-top: 10rem;
   text-align: center;
-  overflow: hidden;
-  /*margin: 30px auto;*/
-}
-
-.jumbotron .container-fluid {
-  display: flex;
-  width: 51.3rem;
-  height: auto;
-  margin: 11.85rem auto;
-  flex-flow: column wrap;
-  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-shadow: -1px -1px 0 #000;
 }
 
 .jumbotron-bike {
-  background-image: url(../resources/images/jumbotron-bike.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  justify-content: center;
-  align-content: center;
+  background-image: url("./resources/images/jumbotron-bike.jpg");
 }
 
 .jumbotron-beer {
-  display: none;
-  background-image: url(../resources/images/jumbotron-beer.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  justify-content: center;
-  align-content: center;
+  background-image: url("./resources/images/jumbotron-beer.jpg");
 }
 
 .jumbotron-flowers {
-  display: none;
-  background-image: url(../resources/images/jumbotron-flowers.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  justify-content: center;
-  align-content: center;
+  background-image: url("./resources/images/jumbotron-flowers.jpg");
 }
 
 .jumbotron-duffel {
-  display: none;
-  background-image: url(../resources/images/jumbotron-duffel.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  justify-content: center;
-  align-content: center;
+  background-image: url("./resources/images/jumbotron-duffel.jpg");
 }
 
 .jumbotron h1 {
   font-family: "Monoton";
   font-size: 7.1rem;
-  color: white;
-  text-shadow: -1px -1px 0 #000;
 }
 
 .jumbotron p {
-  font-family: "Open Sans";
-  font-size: 1rem;
-  font-weight: 400;
+  max-width: 51.3rem;
+  margin: auto;
+}
+
+.btn-container {
+  position: relative;
+  top: -16rem;
+  width: 100%;
+  text-align: center;
 }
 
 .btn {
