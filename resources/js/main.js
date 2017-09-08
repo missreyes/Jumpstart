@@ -1,6 +1,7 @@
 $(document).ready(function(){
-  $('.carousel').slick({
-    slidesToShow: 3,
+  // $('.carousel').slick({
+  $('.carousel').not('.slick-initialized').slick({
+    // slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,

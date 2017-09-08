@@ -32,6 +32,10 @@ html {
 }
 
 /*Jumbotron*/
+.slick-slide {
+  outline: none;
+}
+
 .jumbotron {
   width: 100%;
   height: 44rem;
@@ -57,7 +61,7 @@ html {
 }
 
 .jumbotron-duffel {
-  background-image: url("..//images/jumbotron-duffel.jpg");
+  background-image: url("../images/jumbotron-duffel.jpg");
 }
 
 .jumbotron h1 {
